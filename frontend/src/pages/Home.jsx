@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/home.css';
-import Navbar from '../components/Navbar/Navbar';
 import heroimage from '../Assets/hero-image.png'
 
 
