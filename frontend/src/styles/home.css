@@ -24,17 +24,20 @@
 }
 
 .hero-content {
-  max-width: 500px; /* Control the width of the text content */
+  max-width: 500px;
   text-align: left;
   margin-left: 100px;
   font-size: 18px;
   font-weight: lighter;
+  align-items: left;
 
 }
 .hero-sub-heading{
   text-align: left;
   margin-top: -30px;
   margin-left: 100px;
+  text-align: left;
+  margin-top: 100px;
 }
 .hero-btn{
   padding: 10px 42px;
@@ -65,6 +68,7 @@
   border: 1px solid #0274FF; /* Optional border for visual separation */
   background-color: #f9f9f9; 
   align-items: center;
+  border-radius: 5px;
 }
 
 .section-heading h4 {

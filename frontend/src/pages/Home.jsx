@@ -26,7 +26,7 @@ const Home = () => {
         <h2>Ready to start a business</h2>
       </div>
       <div className='hero-content'>
-        <p>With the ever rising rate of unemployment, InnoLink helps bridgee the gap between unemployed youth and industry entrepreneurs
+        <p>With the ever rising rate of unemployment, InnoLink helps bridge the gap between unemployed youth and industry entrepreneurs
           that are in their instrest niche and skill set, helping them to assist and guide them in getting all required skillls and knowledge 
           to help them start their own business. With Ai poweredd technology, Innolink ensures that the business ideas are tailored to your speific skills and interests
         </p>
