@@ -19,7 +19,8 @@
     list-style: none;
     display: flex;
     gap: 20px;
-    margin-left: -100vh;
+    margin-left: -50vh;
+   
   }
   
   .navbar-links li {
