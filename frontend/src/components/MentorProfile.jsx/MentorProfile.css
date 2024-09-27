@@ -99,47 +99,102 @@
 .far-right{
     margin-left: 250vh;
 }
-/* Skills Section */
-.skills-section {
+/* About and Skills Section */
+.about-skills-section {
     margin-top: 20px;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
 }
 
-.skills-list {
-    list-style: none;
-    padding: 0;
+.about-skills-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left; /* Align to the left */
 }
 
-.skills-list li {
-    padding: 5px 0;
+.about-skills-section p {
     font-size: 16px;
+    line-height: 1.5;
+    text-align: left; /* Align to the left */
 }
 
-.add-skills-btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
+.see-more {
+    color: #007bff;
     cursor: pointer;
 }
 
-.add-skills-btn:hover {
-    background-color: #0056b3;
+/* Skills Container */
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.skills-header {
+    display: flex;
+    align-items: center;
+}
+
+.skills-icon {
+    margin-right: 8px;
+}
+
+.skills-list {
+    flex: 1;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.arrow-icon {
+    font-size: 18px;
+    cursor: pointer;
+    color: #007bff;
 }
 
 
-/* General Information */
-.general-information {
+/* General Information Section */
+.general-info-section {
     margin-top: 20px;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
 }
+
+.general-info-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left; /* Align to the left */
+}
+
+.general-info-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-icon {
+    font-size: 24px;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.general-info-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left; /* Align to the left */
+    margin: 0;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

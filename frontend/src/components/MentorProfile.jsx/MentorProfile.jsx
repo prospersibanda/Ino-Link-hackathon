@@ -1,15 +1,14 @@
 import React from 'react';
 import './MentorProfile.css';
 import banner from '../../Assets/banner.jpg';
-import { FaLock } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom'; // Use useNavigate instead of useHistory
+import { FaLock, FaGem, FaArrowRight, FaInfoCircle } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 const MentorProfile = () => {
-    const navigate = useNavigate(); // Initialize useNavigate
+    const navigate = useNavigate();
 
     const handleAddSkills = () => {
-        // Navigate to the Add Skills page
-        navigate('/add-skills'); // Adjust this path as needed
+        navigate('/add-skills');
     };
 
     return (
@@ -35,22 +34,31 @@ const MentorProfile = () => {
                 </div>
             </div>
 
-            {/* Skills Section */}
-            <div className="skills-section">
-                <h3>Skills</h3>
-                <ul className="skills-list">
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>UI/UX Design</li>
-                </ul>
-                <button className="add-skills-btn" onClick={handleAddSkills}>Add Skills</button>
+            {/* About and Skills Section */}
+            <div className="about-skills-section">
+                <h3>About</h3>
+                <p>🌟 Turning ideas into code and code into impactful digital experiences. As a Software Engineer and Affiliate Marketer, I’m passionate about building seamless, responsive web applications and crafting data-driven marketing strategies that deliver real results.</p>
+                <p>...<span className="see-more">see more</span></p>
+
+                <div className="skills-container">
+                    <div className="skills-header">
+                        <FaGem className="skills-icon" />
+                        <h4>Top Skills</h4>
+                    </div>
+                    <p className="skills-list">JavaScript • React.js • Git • Python (Programming Language) • Cascading Style Sheets (CSS)</p>
+                    <FaArrowRight className="arrow-icon" onClick={handleAddSkills} />
+                </div>
             </div>
 
-            {/* General Information */}
-            <div className="general-information">
+            {/* General Information Section */}
+            <div className="general-info-section">
                 <h3>General Information</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ornare odio. Curabitur vitae velit ultricies, lobortis tellus quis, tempus ante.</p>
+                <div className="general-info-card">
+                    <FaInfoCircle className="info-icon" />
+                    <p>
+                        🌍 Based in Johannesburg, South Africa. I specialize in building web applications that are not only functional but also aesthetically pleasing. Outside of coding, I'm an avid traveler and coffee enthusiast. Currently open to freelance and full-time opportunities.
+                    </p>
+                </div>
             </div>
         </div>
     );
