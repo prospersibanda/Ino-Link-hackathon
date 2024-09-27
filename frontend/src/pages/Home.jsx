@@ -3,7 +3,7 @@ import '../styles/home.css';
 import profile from '../assets/profile.png'
 import heroimage from '../assets/hero-image.png';
 import Navbar from '../components/Navbar/Navbar';
-import heroimage from '../Assets/hero-image.png';
+
 
 
 const Home = () => {
