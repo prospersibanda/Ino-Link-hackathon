@@ -1,6 +1,15 @@
 import React from 'react'
 import '../styles/home.css';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+import profile from '../assets/profile.png'
+import heroimage from '../assets/hero-image.png'
+=======
+import Navbar from '../components/Navbar/Navbar';
+>>>>>>> d57889d59618ffe8003f3900c55c2a732e7f1770
 import heroimage from '../Assets/hero-image.png'
+>>>>>>> a61297a9abc0296a244989131569f4999a3b63a3
 
 
 const Home = () => {
