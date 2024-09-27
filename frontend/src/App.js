@@ -11,6 +11,7 @@ import ChatWindow from './pages/ChatWindow';
 import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar/Navbar';
 import JoinUsForm from './components/JoinUsForm/JoinUsForm';
+import Skills from './components/skillsForm/skillsForm';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/explore" element={<ExploreResources />} />
           <Route path="/chat" element={<ChatWindow />} />
           <Route path="*" element={<NotFound />} />
+          <Route path='/skills' element={<Skills/>}/>
         </Routes>
       </div>
     </Router>

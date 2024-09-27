@@ -1,0 +1,50 @@
+.skill-home{
+    background-image: url(/src/Assets/skill-bg.png);
+    height: 100vh;
+    color: white;
+    padding:70px
+}
+.skill-inside{
+   background-color:  #2398D966;
+    padding: 80px;
+}
+.skill-search {
+    display: flex; 
+    align-items: center; 
+    gap: 8px;
+    margin-bottom: 30px;
+}
+.skill-search input{
+    width: 430px;
+    border-radius: 30px;
+}
+.keywords button{
+   padding: 10px;
+   margin: 10px;
+   border-radius: 20px;
+   border: none;
+   font-weight: light;
+}
+
+
+.skill-heading {
+    margin-right: 10px; 
+}
+
+.skills-ques{
+    text-align: left;
+}
+.skills-content{
+    display: flex;
+}
+.arrow{
+    margin-left: 30px;
+  margin-top: 25px;
+  align-items: right;
+}
+
+.input{
+    color:  #D9D9D9;
+    
+}
+

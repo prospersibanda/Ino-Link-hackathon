@@ -15,7 +15,9 @@ const Navbar = () => {
         <li  className='acive'><a href="#home">Home</a></li>
         <li><a href="#mentor">Mentor</a></li>
         <li><a href="#resources">Resources</a></li>
+        <Link to={'/skills'}>
         <li><a href="#how-it-works">How it works</a></li>
+        </Link>
       </ul>
     </nav>
   );
