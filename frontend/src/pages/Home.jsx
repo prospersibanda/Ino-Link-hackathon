@@ -1,9 +1,6 @@
 import React from 'react'
 import '../styles/home.css';
-import heroimage from '../Assets/hero-image1.png'
-import search from '../Assets/search.png'
-import text from '../Assets/text.png'
-import { Link } from 'react-router-dom'
+import heroimage from '../Assets/hero-image.png'
 
 
 
@@ -54,7 +51,7 @@ const Home = () => {
          <div className='home-sections'>
 
           <div className='section1'>
-            <img src={search }alt="microscope" />
+            {/* <img src={ }alt="microscope" /> */}
             <div className='section-heading'>
               <h4>Explore Business Ideas</h4>
             </div>
@@ -63,7 +60,7 @@ const Home = () => {
             </div>
 
             <div className='section1'>
-            <img src={ text }alt="text speech" />
+            {/* <img src={  }alt="text speech" /> */}
             <div className='section-heading'>
             <h4>Get feedback and assistance on your Ideas</h4>
             </div>
@@ -74,7 +71,7 @@ const Home = () => {
 
 
             <div className='section1'>
-            <img src={ text }alt="text speech" />
+            {/* <img src={  }alt="text speech" /> */}
             <div className='section-heading'>
             <h4>Get feedback and assistance on your Ideas</h4>
             </div>
@@ -86,7 +83,7 @@ const Home = () => {
 
 
             <div className='section1'>
-            <img src={ text }alt="text speech" />
+            {/* <img src={  }alt="text speech" /> */}
             <div className='section-heading'>
             <h4>Get feedback and assistance on your Ideas</h4>
             </div>
@@ -104,9 +101,9 @@ const Home = () => {
           <h2>Ready to get started?</h2>
         </div>
         <div className='start-btn'>
-          <Link to="/signup">
+         
           <button className='start-button'>Get started</button>
-          </Link>
+         
         </div>
       </div>
 
