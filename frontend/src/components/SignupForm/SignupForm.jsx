@@ -1,10 +1,10 @@
 // SignupForm.js
 import React from 'react';
 import './SignupForm.css';
-import github_logo from '../../assets/github.png';
-import facebook_logo from '../../assets/facebook.png';
-import google_logo from '../../assets/google.png';
-import in_logo from '../../assets/in.png';
+import github_logo from '../../Assets/github.png'
+import facebook_logo from '../../Assets/facebook.png';
+import google_logo from '../../Assets/google.png';
+import in_logo from '../../Assets/in.png';
 
 const SignupForm = () => {
   return (
