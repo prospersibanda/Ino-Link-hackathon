@@ -1,35 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import '../styles/home.css';
-import profile from '../Assets/profile.png'
+import Navbar from '../components/Navbar/Navbar';
 import heroimage from '../Assets/hero-image.png'
 
 
 const Home = () => {
   return (
-    <div>
       <>
-      <div className='navBar'>
-        <div className='logo'>InnoLink</div>
-        <div className='nav-btns'>
-          <Link to="/">
-          <button>Business Idea</button>
-          </Link>
-          <Link to="/dashboard">
-          <button>Become A Mentor</button>
-          </Link>
-          <Link to="/explore">
-          <button>Resources</button>
-          </Link>
-          <Link to="*">
-          <button>How it Works</button>
-          </Link>  
-          <Link to="*">
-          <button><img src={profile} alt="profile icon" className='profile-icon' /></button>
-          </Link>  
-        </div>
-      </div>
-      
       <div className='hero-section'>
         <div className='hero-content'>
         <h1 className='hero-heading'>Start your journey to a successful business </h1>
@@ -39,27 +16,14 @@ const Home = () => {
         <div className='hero-image'>
           <img src={heroimage} alt="hero image" />
         </div>
+        <div className='hero-btn'>
+          <button className='explore-btn'>Explore business ideas</button>
+        </div>
       </div>
-
-      
-      
-      
       </>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
   )
 }
+  
+
 
 export default Home
