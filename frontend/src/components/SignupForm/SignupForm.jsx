@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import './SignupForm.css';
-<<<<<<< HEAD
-=======
-import github_logo from '../../Assets/github.png';
-import facebook_logo from '../../Assets/facebook.png';
-import google_logo from '../../Assets/google.png';
-import in_logo from '../../Assets/in.png';
+import github_logo from '../../assets/github.png';
+import facebook_logo from '../../assets/facebook.png';
+import google_logo from '../../assets/google.png';
+import in_logo from '../../assets/in.png';
 import { Link } from 'react-router-dom';
->>>>>>> f3eea878d0e3e14ea6066f89028ea11c12d5a566
 
 const SignupForm = () => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
