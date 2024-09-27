@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/home.css';
-import heroimage from '../Assets/hero-image.png'
+import heroimage from '../Assets/hero-image1.png'
 
 
 
