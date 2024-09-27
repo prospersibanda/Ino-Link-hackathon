@@ -1,8 +1,11 @@
 import React from 'react'
+import MentorProfile from '../components/MentorProfile.jsx/MentorProfile'
 
 const MentorDashboard = () => {
   return (
-    <div>MentorDashboard</div>
+    <div>
+      <MentorProfile/>
+    </div>
   )
 }
 
