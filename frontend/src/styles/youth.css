@@ -1,0 +1,225 @@
+/* MentorProfile.css */
+.mentor-profile-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Profile Header */
+.profile-header {
+    position: relative;
+    background-color: #f4f4f4;
+}
+
+.background-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    top: -20px;
+    margin-left: -115vh;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: -15vh;
+}
+
+.user-details {
+    flex: 1;
+    
+}
+
+.user-details h2 {
+    margin: 0;
+    margin-left: -5vh;
+    margin-top: 2vh;
+}
+
+.user-details h3{
+    margin-left: -16vh;
+}
+.user-details p{
+    margin-left: 116vh !important;
+    width: 55vh;
+    align-items: flex-start;
+}
+.highlight {
+    background-color: #c7e9b0;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.action-buttons {
+    margin-top: 10px;
+    margin-left: 14vh;
+}
+
+.action-buttons button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contact-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.message-btn {
+    background-color: transparent;
+    border: 1px solid blue !important;
+    color: blue;
+}
+
+.more-btn {
+    background-color: transparent;
+    border: 1px solid gray !important;
+    color: grey;
+}
+
+.followers {
+    margin-top: 10px;
+    color: #666;
+}
+.far-right{
+    margin-left: 250vh;
+}
+/* About and Skills Section */
+.about-skills-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.about-skills-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left; /* Align to the left */
+}
+
+.about-skills-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left; /* Align to the left */
+}
+
+.see-more {
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.skills-header {
+    display: flex;
+    align-items: center;
+}
+
+.skills-icon {
+    margin-right: 8px;
+}
+
+.skills-list {
+    flex: 1;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.arrow-icon {
+    font-size: 18px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+
+/* General Information Section */
+.general-info-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.general-info-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left; /* Align to the left */
+}
+
+.general-info-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-icon {
+    font-size: 24px;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.general-info-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left; /* Align to the left */
+    margin: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .avatar {
+        margin-bottom: 10px;
+    }
+
+    .action-buttons button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .circle {
+        margin-bottom: 10px;
+    }
+}
