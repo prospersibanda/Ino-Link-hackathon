@@ -4,7 +4,8 @@
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
   justify-content: space-between; /* Distribute space between elements */
   align-items: center; /* Align items vertically */
-  margin-left: 30px;
+  margin-left: 100px;
+  margin-bottom: -30px;
 }
 
 .hero-heading, .hero-btn, .hero-image, .hero-sub-heading, .hero-content {
@@ -18,17 +19,22 @@
 .hero-image img {
   max-width: 100%; /* Ensure the image doesn't overflow */
   margin-top: 80px;
+  width: 900px;
   
 }
 
 .hero-content {
   max-width: 500px; /* Control the width of the text content */
   text-align: left;
+  margin-left: 100px;
+  font-size: 18px;
+  font-weight: lighter;
+
 }
 .hero-sub-heading{
   text-align: left;
-  margin-top: 20px;
-  margin-left: 10px;
+  margin-top: -30px;
+  margin-left: 100px;
 }
 .hero-btn{
   padding: 10px 42px;
@@ -37,4 +43,41 @@
   background-color: #0274FF;
   color: white;
   font-size: 15px;
+  margin-left: -1px;
 }
+
+
+
+
+
+/* home section */
+.home-sections {
+  display: flex; /* Aligns children (sections) side by side */
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  justify-content: space-between; /* Space between items */
+  gap: 1px; /* Adds spacing between sections */
+}
+
+.section1 {
+  flex: 1; /* Each section takes equal width */
+  margin: 40px; /* Optional margin around each section */
+  padding: 30px; /* Adds internal padding */
+  border: 1px solid #ddd; /* Optional border for visual separation */
+  background-color: #f9f9f9; 
+  align-items: center;
+}
+
+.section-heading h4 {
+  margin-bottom: 10px; /* Adds spacing below the heading */
+}
+
+.section-content {
+  font-size: 14px; /* Adjust font size for content */
+}
+
+.start-section {
+  text-align: center; /* Centers the "Ready to get started?" section */
+  margin-top: 30px; /* Adds spacing above */
+}
+
+
