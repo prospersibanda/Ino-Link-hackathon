@@ -10,6 +10,7 @@ import ExploreResources from './pages/ExploreResources';
 import ChatWindow from './pages/ChatWindow';
 import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar/Navbar';
+import JoinUsForm from './components/JoinUsForm/JoinUsForm';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/joinus" element={<JoinUsForm />} />
           <Route path="/dashboad" element={<MentorDashboard />} />
           <Route path="/dashboard" element={<YouthDashboard />} />
           <Route path="/explore" element={<ExploreResources />} />

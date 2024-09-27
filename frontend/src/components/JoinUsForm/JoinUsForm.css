@@ -1,0 +1,118 @@
+/* Container */
+.join-us-container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+    align-items: flex-start;
+  }
+  
+  /* Form Styling */
+  .join-us-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  
+  h2 {
+    align-items: flex-start;
+    font-weight: bold;
+  }
+  
+  .form-section {
+    margin-top: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+  }
+  
+  .section-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: white;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+  
+  .form-note {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0.5rem 0;
+  }
+  
+  /* Input Fields */
+  label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  input[type='text'],
+  select {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Radio Buttons */
+  .radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+  
+  .radio-group label {
+    font-size: 0.9rem;
+  }
+  
+  /* Date of Birth Group */
+  .dob-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dob-group select {
+    width: 32%;
+  }
+  
+  /* Button */
+  .next-btn {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 1.5rem 0 0;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .next-btn:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .join-us-form {
+      padding: 1.5rem;
+    }
+  
+    .dob-group select {
+      width: 30%;
+    }
+  }
+  
