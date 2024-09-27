@@ -1,117 +1,97 @@
-/* SignupForm.css */
-.signup-form-container {
-    width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  .main-login-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
+/* Container and Background */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('/src/assets/signup-background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
 
-  .login-social-logo{
-    width: 20px;
-    margin-right: 20px;
-  }
+/* Form Styling */
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
 
-  .social-signup-buttons button{
-    width: 30vh;
-  }
-  
-  .social-signup-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-    margin-left: 90px;
-  }
-  
-  .social-button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    background-color: white;
-  }
-  
-  .social-button i {
-    margin-right: 10px;
-  }
-  
-  .login-link {
-    color: blue;
-    display: block;
-    margin: 10px 0;
-    cursor: pointer;
-  }
-  
-  .signup-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-    margin-left: -25vh;
-  }
-  
-  .signup-form input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    width: 50vh;
-    box-sizing: border-box;
-  }
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
 
-  .signup-section{
-    display: flex;
-  }
-  
-  .remember-me {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .remember-me input{
-    margin-left: -23vh;
-  }
+p {
+  text-align: center;
+  margin: 0.5rem 0;
+}
 
-  .remember-me label{
-    margin-left: -26vh;
-    font-size: 13px;
-  }
-  .submit-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    width: 30vh;
-  }
-  
-  .alternative-signup {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-    margin-left: 10vh;
-    margin-top: 5vh !important;
-  }
+/* Input fields */
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
 
-  .alternative-signup button{
-    width: 30vh;
+.password-field {
+  position: relative;
+}
+
+.password-field button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 1rem 0;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.login-btn:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+/* Continue with Google/Facebook */
+.continue-text {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.continue-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.continue-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .login-form {
+    padding: 1.5rem;
   }
-  
+}
