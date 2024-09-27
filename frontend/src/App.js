@@ -21,7 +21,6 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/dashboad" element={<MentorDashboard />} />
           <Route path="/dashboard" element={<YouthDashboard />} />
-          <Route path="/resources" element={<LearningResources />} />
           <Route path="/explore" element={<ExploreResources />} />
           <Route path="/chat" element={<ChatWindow />} />
           <Route path="*" element={<NotFound />} />
