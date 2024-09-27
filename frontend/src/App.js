@@ -6,14 +6,15 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import MentorDashboard from './pages/MentorDashboard';
 import YouthDashboard from './pages/YouthDashboard';
-import LearningResources from './pages/LearningResources';
 import ExploreResources from './pages/ExploreResources';
 import ChatWindow from './pages/ChatWindow';
 import NotFound from './pages/NotFound';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
     <Router>
+      <Navbar/>
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
