@@ -62,7 +62,7 @@
   flex: 1; /* Each section takes equal width */
   margin: 40px; /* Optional margin around each section */
   padding: 30px; /* Adds internal padding */
-  border: 1px solid #ddd; /* Optional border for visual separation */
+  border: 1px solid #0274FF; /* Optional border for visual separation */
   background-color: #f9f9f9; 
   align-items: center;
 }
