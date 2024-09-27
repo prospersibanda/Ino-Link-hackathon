@@ -1,16 +1,11 @@
 import React from 'react'
 import '../styles/home.css';
-<<<<<<< HEAD
-import heroimage from '../assets/hero-image1.png'
-=======
 import heroimage from '../Assets/hero-image1.png'
 import people from '../Assets/people.png'
 import text from '../Assets/text.png'
 import access from '../Assets/access1.png'
 import search from '../Assets/search.png'
 import { Link } from 'react-router-dom';
-
->>>>>>> 46868b9bb9bee6bc32cc7838795c891764796150
 
 
 

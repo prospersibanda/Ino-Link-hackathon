@@ -12,14 +12,11 @@ const JoinUsForm = () => {
           </p>
           <p className="form-note">*All fields required unless noted.</p>
           <form>
-            <label>*First name</label>
-            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="First name*" />
 
-            <label>Middle name (as applicable)</label>
             <input type="text" placeholder="Middle name" />
 
-            <label>*Last name</label>
-            <input type="text" placeholder="Last name" />
+            <input type="text" placeholder="Last name*" />
 
             <label>What's your gender? (optional)</label>
             <div className="radio-group">
