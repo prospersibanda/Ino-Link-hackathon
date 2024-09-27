@@ -1,25 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import '../../styles/skills.css'
 import arrow from '../../Assets/arrow2.png'
 
 function Skills(){
+    const [skills, setSkills] = useState(''); // State to hold the current input value
+    const [keywords, setKeywords] = useState([]); // State to hold the list of skills/keywords
+
+    // Function to handle input changes
+    const handleInputChange = (e) => {
+        setSkills(e.target.value);
+    };
+
+    // Function to handle adding a skill to the keywords list
+    const addSkill = (e) => {
+        if (e.key === 'Enter' && skills.trim() !== '') {
+            setKeywords([...keywords, skills]); // Add the skill to the array
+            setSkills(''); // Clear the input field
+        }
+    };
+ // Function to remove a skill by its index
+ const removeSkill = (indexToRemove) => {
+    setKeywords(keywords.filter((_, index) => index !== indexToRemove));
+};
+
+
+
+
     return(
         <>
         <div className="skill-home">
             <div className="skill-inside">
      <div className="skill-search">
         <h1 className="skill-heading">Skills</h1>
-        <input type="text" placeholder="Type your skills here..." />
+        <input type="text" 
+        placeholder="Type your skills here..."
+        value={skills}
+        onChange={handleInputChange} 
+        onKeyDown={addSkill}
+         />
      </div>
 
      <div className="keywords">
-        <button>UI/UX</button>
-        <button>Project Management</button>
-        <button>Sewing</button>
-        <button>Hair</button>
-        <button>Makeup</button>
-        <button>Event Management</button>
-        <button>Entertainment</button>
+        <button>
+     {keywords.map((keyword, index) => (
+     <span key={index} className="keyword">
+         {keyword}
+         <button className="remove-button" onClick={() => removeSkill(index)}>
+                 &times;
+                </button>
+     </span>
+    ))}
+    </button>
+
      </div>
 
      <div className="skills-ques">
