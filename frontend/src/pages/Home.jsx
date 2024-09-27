@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../styles/home.css';
-import profile from '../Assets/profile.png'
-import heroimage from '../Assets/hero-image.png'
+import profile from '../assets/profile.png'
+import heroimage from '../assets/hero-image.png'
 
 
 const Home = () => {
