@@ -12,19 +12,17 @@ const Navbar = () => {
         </Link>
       </div>
       <ul className="navbar-links">
-        <Link>
-        <li  className='acive'>Business idea</li>
-        </Link>
+        <li  className='acive'><a href="#home">Business idea</a></li>
         <Link to={'/dashboard'}>
-        <li>Mentor</li>
+        <li><a href="#mentor">Mentor</a></li>
         </Link>
         <Link to='/explore'>
-        <li>Resources</li>
+        <li><a href="#resources">Resources</a></li>
         </Link>
         <Link to={'/skills'}>
-        <li>Skills</li>
+        <li><a href="#how-it-works">Skills</a></li>
         </Link>
-        <button><a href="#how-it-works" className='sign-up' >Sign Up</a></button>
+        <button><a href="#how-it-works" className='sign-up' >Logout</a></button>
       </ul>
     </nav>
   );

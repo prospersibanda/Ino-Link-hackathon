@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import BusinessReportCard from './BusinessReportCard';
 import './SkillList.css';
 import axios from 'axios';
+import Navbar from './Navbar';
 
 const SkillList = () => {
   const [skills, setSkills] = useState(''); // State to store the user's input skills
@@ -58,7 +59,9 @@ const SkillList = () => {
   };
 
   return (
-    <div className="skill-list-container">
+   <>
+<Navbar/>
+<div className="skill-list-container">
       {/* Input field for entering skills */}
       <div className="skill-input-container">
         <input
@@ -89,6 +92,8 @@ const SkillList = () => {
         )}
       </div>
     </div>
+
+   </>
   );
 };
 
