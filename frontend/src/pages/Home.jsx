@@ -26,6 +26,8 @@ const Home = () => {
           <img src={heroimage} alt="people talking in an officee" />
         </div>
         </div>
+
+        <div className='stubborn'>
       <div className='hero-sub-heading'>
         <h2>Ready to start a business</h2>
       </div>
@@ -34,9 +36,12 @@ const Home = () => {
           that are in their instrest niche and skill set, helping them to assist and guide them in getting all required skillls and knowledge 
           to help them start their own business. With Ai poweredd technology, Innolink ensures that the business ideas are tailored to your speific skills and interests
         </p>
+        </div>
+
+
        <div className='btn'>
         <Link to={'/signup'}>
-        <button className='hero-btn'>Get started</button>
+        <button className='hero-btn1'>Get started</button>
         </Link>
         </div>
        </div>
