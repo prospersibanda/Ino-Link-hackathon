@@ -6,11 +6,11 @@
     font-family: Arial, sans-serif;
     color: #333;
 }
-
 /* Profile Header */
 .profile-header {
-    position: relative;
     background-color: #f4f4f4;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .background-img {
@@ -21,58 +21,65 @@
 
 .profile-info {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    margin-top: -50px;
     position: relative;
-    top: -20px;
-    margin-left: -115vh;
 }
 
 .avatar {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background-color: #ccc;
     border-radius: 50%;
     margin-right: 20px;
-    margin-top: -15vh;
 }
 
 .user-details {
     flex: 1;
+    text-align: center; /* Center text alignment */
+    max-width: 600px; /* Restrict width for proper alignment */
 }
 
 .user-details h2 {
     margin: 0;
-    margin-left: -5vh;
-    margin-top: 2vh;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.user-details h3{
-    margin-left: -16vh;
+.user-details h3 {
+    margin: 5px 0;
+    color: #555;
+    margin-left: -5vh !important;
+    font-weight: normal;
 }
-.user-details p{
-    margin-left: 116vh !important;
-    width: 55vh;
-    align-items: flex-start;
-}
-.highlight {
-    background-color: #c7e9b0;
-    padding: 2px 4px;
-    border-radius: 4px;
+
+.user-details h4 {
+    margin: 10px 0; /* Center paragraph */
+    color: #777;
+    margin-left: 15vh;
+    max-width: 400px; /* Restrict paragraph width */
 }
 
 .action-buttons {
-    margin-top: 10px;
-    margin-left: 14vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .action-buttons button {
-    margin-right: 10px;
-    padding: 5px 10px;
+    padding: 8px 16px;
     border: none;
-    border-radius: 30px;
+    border-radius: 5px;
+    font-size: 14px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .contact-btn {
@@ -81,24 +88,28 @@
 }
 
 .message-btn {
-    background-color: transparent;
-    border: 1px solid blue !important;
-    color: blue;
+    background-color: #ffffff;
+    color: #007bff;
+    border: 1px solid #007bff;
 }
 
 .more-btn {
-    background-color: transparent;
-    border: 1px solid gray !important;
-    color: grey;
+    background-color: #ffffff;
+    color: #555;
+    border: 1px solid #ccc;
 }
 
 .followers {
-    margin-top: 10px;
-    color: #666;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: #777;
+    font-size: 14px;
 }
-.far-right{
-    margin-left: 250vh;
-}
+
+
+
+
 /* About and Skills Section */
 .about-skills-section {
     margin-top: 20px;

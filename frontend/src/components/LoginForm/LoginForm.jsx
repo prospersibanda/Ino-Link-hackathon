@@ -34,7 +34,7 @@ const LoginForm = () => {
       const data = await response.json();
       if (response.ok) {
         // Handle success (e.g., navigate to dashboard)
-        navigate('/');
+        navigate('/skills');
       } else {
         // Handle error (e.g., display error message)
         console.error(data.msg);
