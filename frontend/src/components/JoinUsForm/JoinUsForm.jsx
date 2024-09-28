@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import './JoinUsForm.css';
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../../context/UserContext';
+import Navbar from '../Navbar2/Navbar2';
 
 const JoinUsForm = () => {
   const { userData, setUserData } = useContext(UserContext);
@@ -46,6 +47,8 @@ const JoinUsForm = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="join-us-container">
       <div className="join-us-form">
         <h2>Join us</h2>
@@ -155,6 +158,7 @@ const JoinUsForm = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 

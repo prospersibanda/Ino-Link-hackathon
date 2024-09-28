@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './LoginForm.css';
 import { useNavigate } from 'react-router';
+import Navbar from '../../components/Navbar2/Navbar2'
 
 
 
@@ -45,6 +46,8 @@ const LoginForm = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="login-container">
       <div className="login-form">
         <h2>Log in</h2>
@@ -80,6 +83,7 @@ const LoginForm = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 

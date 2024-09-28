@@ -8,6 +8,10 @@
   
   .navbar-logo {
     width: 100%;
+   
+  }
+  .navbar-logo img{
+    margin-right: 700px;
   }
   
   .logo-letter {
@@ -19,7 +23,7 @@
     list-style: none;
     display: flex;
     gap: 20px;
-    margin-left: -50vh;
+  margin-left: -80vh;
    
   }
   
@@ -53,4 +57,15 @@
     .navbar-links{
       display: none;
     }
+  }
+
+  button .sign-up{
+    color: white;
+  }
+  button{
+    background-color: #0274FF ;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    
   }

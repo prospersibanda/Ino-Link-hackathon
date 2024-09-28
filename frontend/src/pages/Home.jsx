@@ -6,13 +6,17 @@ import text from '../Assets/text.png'
 import access from '../Assets/access1.png'
 import search from '../Assets/search.png'
 import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar/Navbar';
 
 
 
 const Home = () => {
   return (
+   
       <>
+         <Navbar/>
       <div className='hero-section'>
+   
         <div className='hero-heading'>
           <h1>Find a business idea, get industry help from mentors across the world and take control of your future</h1>
           <button className='hero-btn'>Explore ideas</button>
