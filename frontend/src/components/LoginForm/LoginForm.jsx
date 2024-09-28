@@ -1,13 +1,8 @@
 import React, { useState, useContext } from 'react';
 import './LoginForm.css';
 import { useNavigate } from 'react-router';
-<<<<<<< HEAD
 import { UserContext } from '../../context/UserContext';
-=======
 import Navbar from '../../components/Navbar2/Navbar2'
-
-
->>>>>>> 5c773a4e8b5b19e9f486795ed4cb69860b47193d
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({
