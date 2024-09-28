@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../../styles/skills.css'
 import arrow from '../../Assets/arrow2.png'
+import Navbar from "../Navbar2/Navbar2";
 
 function Skills(){
     const [skills, setSkills] = useState(''); // State to hold the current input value
@@ -28,6 +29,7 @@ function Skills(){
 
     return(
         <>
+        <Navbar/>
         <div className="skill-home">
             <div className="skill-inside">
      <div className="skill-search">
@@ -87,6 +89,7 @@ function Skills(){
         
         
      </div>
+     <input type="submit" className="submit-btn" />
      </div>
      </div>
 </>

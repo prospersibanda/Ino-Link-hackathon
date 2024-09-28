@@ -3,6 +3,7 @@ import './MentorProfile.css';
 import banner from '../../Assets/banner.jpg';
 import { FaLock, FaGem, FaArrowRight, FaInfoCircle, FaPhone } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../Navbar2/Navbar2';
 
 const MentorProfile = () => {
     const navigate = useNavigate();
@@ -17,6 +18,8 @@ const MentorProfile = () => {
     };
 
     return (
+        <>
+        <Navbar/>
         <div className="mentor-profile-container">
             {/* Profile Header */}
             <div className="profile-header">
@@ -75,6 +78,7 @@ const MentorProfile = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 
