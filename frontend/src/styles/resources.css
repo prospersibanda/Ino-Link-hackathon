@@ -1,0 +1,66 @@
+.res-heading{
+    font-weight: bold;
+}
+.search {
+    display: flex;
+    gap: 30px;
+    margin: 90px;
+    color: #D9D9D9;
+}
+
+.search-btn{
+    padding: 1px 40px 1px;
+   border: none;
+   border-radius: 40px;
+   background-color: #0274FF;
+   color: white;
+   font-size: 20px;
+}
+
+.res-option{
+    border: 1px solid black;
+    background: none;
+    gap: 40px;
+
+}
+.more-btn{
+    border: none;
+    border-radius: 40px;
+    background-color: #0274FF;
+    color: white;
+    font-size: 20px;
+ }
+
+
+
+/*  */
+.resource-buttons {
+    display: block; /* Ensure the h1 stays on top */
+  }
+  
+  .resource-buttons h1 {
+    text-align: center; /* Optional: centers the heading */
+  }
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px;
+    gap: 14px;
+  }
+  
+  .res-option {
+    padding: 10px 30px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 40px;
+   
+  }
+  
+  .more-btn {
+    padding: 9px 25px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  

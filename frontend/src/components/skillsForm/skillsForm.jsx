@@ -87,6 +87,7 @@ function Skills(){
         
         
      </div>
+     <input type="submit" className="submit-btn" />
      </div>
      </div>
 </>
