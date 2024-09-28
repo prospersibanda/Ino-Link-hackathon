@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import './SignupForm.css';
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../../context/UserContext';
+import Navbar from '../Navbar2/Navbar2';
 
 
 const SignupForm = () => {
@@ -24,6 +25,8 @@ const SignupForm = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="signup-container">
       <div className="signup-form">
         <h2>Create an account</h2>
@@ -82,6 +85,7 @@ const SignupForm = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 
