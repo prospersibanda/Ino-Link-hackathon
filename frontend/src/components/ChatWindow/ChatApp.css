@@ -1,0 +1,23 @@
+.chat-app {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .chat-app {
+      flex-direction: column;
+    }
+  
+    .chat-list {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .chat-window {
+      width: 100%;
+    }
+  }
+  

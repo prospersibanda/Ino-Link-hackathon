@@ -12,6 +12,7 @@ import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar/Navbar';
 import JoinUsForm from './components/JoinUsForm/JoinUsForm';
 import Skills from './components/skillsForm/skillsForm';
+import AI_Page from './pages/AI_Page';
 
 
 function App() {
@@ -28,8 +29,10 @@ function App() {
           <Route path="/dashboard" element={<YouthDashboard />} />
           <Route path="/explore" element={<ExploreResources />} />
           <Route path="/chat" element={<ChatWindow />} />
+          <Route path='/generate' element={<AI_Page/>}/>
           <Route path="*" element={<NotFound />} />
           <Route path='/skills' element={<Skills/>}/>
+
         </Routes>
       </div>
     </Router>
