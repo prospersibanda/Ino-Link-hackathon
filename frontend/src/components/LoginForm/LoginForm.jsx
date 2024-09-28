@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './LoginForm.css';
 import { useNavigate } from 'react-router';
-
-
+import { UserContext } from '../../context/UserContext';
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +10,7 @@ const LoginForm = () => {
   });
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const navigate = useNavigate();
+  const { setUserData } = useContext(UserContext);
 
   const togglePasswordVisibility = () => {
     setIsPasswordVisible(!isPasswordVisible);
@@ -20,10 +20,29 @@ const LoginForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // Manual JWT decoding function
+  const decodeToken = (token) => {
+    try {
+      const base64Url = token.split('.')[1]; // Get the payload part
+      const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/'); // Adjust base64 format
+      const jsonPayload = decodeURIComponent(
+        atob(base64)
+          .split('')
+          .map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2))
+          .join('')
+      );
+
+      return JSON.parse(jsonPayload); // Return the parsed payload
+    } catch (error) {
+      console.error('Failed to decode JWT:', error);
+      return null;
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/auth/login', {
+      const response = await fetch('http://localhost:5001/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -32,11 +51,39 @@ const LoginForm = () => {
       });
 
       const data = await response.json();
+
       if (response.ok) {
-        // Handle success (e.g., navigate to dashboard)
+        // Manually decode the JWT to extract user information
+        const decodedToken = decodeToken(data.token);
+
+        if (!decodedToken) {
+          console.error('Failed to decode token.');
+          return;
+        }
+
+        // Assuming the decoded token structure is: { user: { _id, email, ... } }
+        const user = decodedToken.user;
+
+        // Set the user data in the context
+        setUserData({
+          _id: user._id, // Extract _id from the decoded token
+          token: data.token, // Save the token
+          email: user.email,
+          firstName: user.firstName,
+          lastName: user.lastName,
+        });
+
+        // Log to confirm user data is set
+        console.log('User data set in context:', {
+          _id: user._id,
+          token: data.token,
+          email: user.email,
+          firstName: user.firstName,
+          lastName: user.lastName,
+        });
+
         navigate('/generate');
       } else {
-        // Handle error (e.g., display error message)
         console.error(data.msg);
       }
     } catch (error) {

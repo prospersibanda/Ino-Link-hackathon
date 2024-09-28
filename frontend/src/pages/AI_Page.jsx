@@ -4,7 +4,8 @@ import SkillList from '../components/AI_Page/SkillList'
 const AI_Page = () => {
   return (
     <div>
-        <SkillList/>
+        <SkillList />
+
     </div>
   )
 }
